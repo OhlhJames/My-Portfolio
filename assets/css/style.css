@@ -11,10 +11,8 @@ body {
     background-color: var(--light);
 }
 header {
-    display: flex;
-    justify-content: left;
     padding: 20px;
-    font: "garamond" ;
+    font: "Garamond";
     background-color: var(--standardblue);
     color: var(--light);
 }
@@ -23,10 +21,19 @@ h1 {
     font-size: 48px;
 }
 h2 {
+    display: inline-block;
     margin-bottom: 20px;
-    font-size: 36px;
+    font-size: 25px;
 }
-nav ul {
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+h4 {
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+header ul {
     list-style-type: none;
     padding-top: 15px;
     margin-right: 20px;
@@ -34,18 +41,27 @@ nav ul {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-nav a ul li {
+header ul li {
     display: inline-block;
     margin-left: 25px;
 }
-nav a {
+header a {
     color: var(--light);
     text-decoration: none;
 }
 p {
     font-size: 20px;
 }
-
+article ul {
+    list-style-type: none;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+article ul li {
+    display: inline-block;
+    padding-right: 50px;
+}
 /*Formats box of blocks of articles */
 .content {
     width: 75%;
@@ -64,17 +80,30 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     
 }
-.aboutme-header, .work-header, .contactme-header, .resume-header{
+.aboutme-header, .work-header {
     border-right: 5px solid var(--standardblue);
     margin-bottom: 20px;
-    padding: 40px;
+    padding-top: 40px;
     height: 200px;
     color: black;
 }
-/*Formats the three main articles */
-.abtme, .wrk, .cntct, .rsme  {
+.contactme-header, .resume-header{
+    border-right: 5px solid var(--standardblue);
     margin-bottom: 20px;
-    padding: 50px;
+    height: 50px;
+    color: black;
+}
+/*Formats the three main articles */
+.abtme, .wrk {
+    margin-bottom: 20px;
+    padding: 40px 40px 40px 10px;
     height: 200px;
+    color: black;
+}
+.cntct, .resme {
+    margin-bottom: 20px;
+    height: 50px;
+    padding-top: 35px;
+    padding-left: 10px;
     color: black;
 }
