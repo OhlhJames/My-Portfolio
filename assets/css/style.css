@@ -1,0 +1,80 @@
+:root{
+    --standardblue: #00488b;
+    --light: #d9dcd6;
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: var(--light);
+}
+header {
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    font: "garamond" ;
+    background-color: var(--standardblue);
+    color: var(--light);
+}
+h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+nav ul {
+    list-style-type: none;
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+nav a ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+nav a {
+    color: var(--light);
+    text-decoration: none;
+}
+p {
+    font-size: 20px;
+}
+
+/*Formats box of blocks of articles */
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+/*Formats aside box */
+.side-titles {
+    margin-left: 20px;
+    padding: 20px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    
+}
+.aboutme-header, .work-header, .contactme-header, .resume-header{
+    border-right: 5px solid var(--standardblue);
+    margin-bottom: 20px;
+    padding: 40px;
+    height: 200px;
+    color: black;
+}
+/*Formats the three main articles */
+.abtme, .wrk, .cntct, .rsme  {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 200px;
+    color: black;
+}
