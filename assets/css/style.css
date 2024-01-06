@@ -1,3 +1,4 @@
+/*Set variables so that the webpage remains uniform*/
 :root{
     --standardBlue: #00488b;
     --standardGreen: #69b169;
@@ -12,9 +13,8 @@ body {
     background-color: var(--light);
 }
 header { 
-    display: flex;
     padding: 20px;
-    font-family: "Garamond";
+    font-family: 'Garamond';
     background-color: var(--standardBlue);
     color: var(--light);
 }
@@ -37,7 +37,7 @@ header ul {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'Garamond';
     font-size: 20px;
 }
 header ul li {
@@ -51,22 +51,13 @@ header a {
 p {
     font-size: 20px;
 }
-.cntct ul {
-    list-style-type: none;
-    margin-right: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-}
-.cntct ul li {
-    display: inline-block;
-    padding-right: 50px;
-}
+
 /*Formats box of blocks of articles */
 .content {
     width: 75%;
     display: inline-block;
     margin-right: 20px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'Garamond';
 }
 /*Formats aside box */
 .side-titles {
@@ -75,55 +66,30 @@ p {
     float: left;
     width: 12%;
     height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-family: 'Garamond';
     
 }
-.aboutme-header, .work-header {
-    border-right: 5px solid var(--standardBlue);
-    margin-bottom: 20px;
-    padding-top: 40px;
-    height: 200px;
-    color: black;
-}
-.contactme-header, .resume-header{
-    
-    border-right: 5px solid var(--standardBlue);
-    margin-bottom: 20px;
-    height: 50px;
-    color: black;
-}
-/*Formats the four main articles */
-.abtme {
+/*Formats each larger header to match larger boxes*/
+
+/*Formats the shared aspects of the four main articles*/
+.abtme, .wrk, .cntct,.resme{
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 20px;
+    color: black;
+    height: fit-content;
+}
+.abtme, .wrk{
+    padding: 40px 40px 40px 10px;
+}
+.abtme {
     flex-direction: column;
     align-items: flex-end;
-    margin-bottom: 20px;
-    padding: 40px 40px 40px 10px;
     height: 200px;
-    color: black;
 }
 .wrk{
-    display: flex;
-    flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
-    margin-bottom: 20px;
-    padding: 40px 40px 40px 10px;
-    color: black;
-    height: fit-content;
-}
-.cntct, .resme {
-    margin-bottom: 20px;
-    height: fit-content;
-    padding-top: 35px;
-    padding-left: 10px;
-    color: black;
-}
-/*Formats profile picture*/
-.profile-pic{
-    padding: 20px;
-    width: 150px;
 }
 .wrk p {
     background-color: var(--standardGreen);
@@ -131,6 +97,43 @@ p {
     margin-bottom: 20px;
     font-size: 15px;
 }
+.cntct, .resme {
+    height: fit-content;
+    padding-top: 35px;
+    padding-left: 10px;
+}
+.cntct ul {
+    list-style-type: none;
+    margin-right: 20px;
+    font-family: 'Garamond';
+    font-size: 20px;
+}
+.cntct ul li {
+    display: inline-block;
+    padding-right: 50px;
+}
+.aboutme-header, .work-header, .contactme-header, .resume-header {
+    display:flex;
+    border-right: 5px solid var(--standardBlue);
+    margin-bottom: 20px;
+    padding-top: 40px;
+    height: 200px;
+    color: black;
+}
+.work-header{
+    height: 825px;
+}
+ /*Formats each smaller header to match smaller boxes*/
+.contactme-header, .resume-header{
+    padding-top: 0px;
+    height: 50px;
+}
+/*Formats profile picture*/
+.profile-pic{
+    padding: 20px;
+    width: 150px;
+}
+/*Formats the shared components of all the images in the Work section*/
 .calculator-pic, .bread-pic, .test-pic{
     display: flex;
     flex-direction: column;
@@ -144,14 +147,13 @@ p {
     border: 5px solid var(--standardGreen);
     filter:grayscale(75%)
 }
-
+/*Formats non shared aspects of images in the Work section*/
 .test-pic{
     background-image: url("../images/calculations.jpg") ;
     height: 500px;
     width:100%;
 }
 .calculator-pic, .bread-pic{
-    display:flex;
     height:200px;
     width:48%;
 }
