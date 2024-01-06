@@ -90,6 +90,9 @@ article ul li {
 /*Formats the four main articles */
 .abtme {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-end;
     margin-bottom: 20px;
     padding: 40px 40px 40px 10px;
     height: 200px;
@@ -97,23 +100,34 @@ article ul li {
 }
 .wrk{
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
     margin-bottom: 20px;
     padding: 40px 40px 40px 10px;
-    height: 200px;
     color: black;
+    height: fit-content;
 }
 .cntct, .resme {
     margin-bottom: 20px;
-    height: 50px;
+    height: fit-content;
     padding-top: 35px;
     padding-left: 10px;
     color: black;
 }
 /*Formats profile picture*/
 .profile-pic{
-    display:flex;
     padding: 20px;
-    min-width: 100px;
-    justify-content: right;
+    width: 150px;
 }
+.test-pic{
+    border: 3px solid green;
+    width:100%;
+    margin:10px
+}
+.calculator-pic, .bread-pic{
+    border: 3px solid green;
+    width:48%;
+    margin:10px;
 
+}
