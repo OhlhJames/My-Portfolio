@@ -29,6 +29,6 @@ MIT Licesnse as mentioned in repo
 
 https://ohlhjames.github.io/My-Portfolio/
 
-##Screenshot
+## Screenshot
 
 ![_C__Users_ohlhj_Bootcamp_Challenge_My-Portfolio_index html (2)](https://github.com/OhlhJames/My-Portfolio/assets/152452334/0918230e-642c-45c3-9428-67b39086d59c)
